@@ -4,16 +4,16 @@
     // "width": 1280, // Waybar width
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces"],
-    "modules-center": ["custom/music"],
+    "modules-center": ["clock"],
     
     "modules-right": [
     "pulseaudio", 
-    "backlight", 
+    // "backlight", 
     "battery", 
-    "clock", 
     "tray", 
+    "network",
     "custom/lock", 
-    "custom/power"
+    "custom/power",
     ],
 
     "wlr/workspaces": {
@@ -24,19 +24,22 @@
              "default": "",
          },
      },
+    
     "tray": {
         "icon-size": 21,
         "spacing": 10
     },
-    "custom/music": {
-        "format": "  {}",
-        "escape": true,
-        "interval": 5,
-        "tooltip": false,
-        "exec": "playerctl metadata --format='{{ title }}'",
-        "on-click": "playerctl play-pause",
-        "max-length": 50
-    },
+
+//    "custom/music": {
+//        "format": "  {}",
+ //       "escape": true,
+ //       "interval": 5,
+//        "tooltip": false,
+//        "exec": "playerctl metadata --format='{{ title }}'",
+ //       "on-click": "playerctl play-pause",
+  //      "max-length": 50
+  //  },
+
     "clock": {
         "timezone": "Asia/Dubai",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
