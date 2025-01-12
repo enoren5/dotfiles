@@ -43,8 +43,9 @@
     "clock": {
         "timezone": "Asia/Dubai",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": " {:%d/%m/%Y}",
-        "format": " {:%H:%M}"
+        // "format-alt": " {%A %d %B %Y}", //{:%d/%m/%Y}",
+	      "format-alt": "{:%A, %B %d, %Y (%R)}  ",
+        // "format": "{%A %d %B %Y}", // %I:%M:%S %p }" 
     },
     "backlight": {
         "device": "intel_backlight",
@@ -80,5 +81,14 @@
         "tooltip": false,
         "on-click": "wlogout &",
         "format": "襤"
-    }
+    },
+  "network": {
+        "interval": 5,
+        "format-wifi": "   {essid} ({signalStrength}%)",
+        "format-ethernet": " {ifname}",
+        "format-disconnected": "No connection",
+        "format-alt": " {ipaddr}/{cidr}",
+        "tooltip": false
+  },
+
 }
