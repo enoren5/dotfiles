@@ -5,7 +5,17 @@
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces"],
     "modules-center": ["custom/music"],
-    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
+    
+    "modules-right": [
+    "pulseaudio", 
+    "backlight", 
+    "battery", 
+    "clock", 
+    "tray", 
+    "custom/lock", 
+    "custom/power"
+    ],
+
     "wlr/workspaces": {
          "disable-scroll": true,
          "sort-by-name": true,
