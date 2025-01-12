@@ -40,14 +40,15 @@
   //      "max-length": 50
   //  },
 
-    "clock": {
-        "timezone": "Asia/Dubai",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        // "format-alt": " {%A %d %B %Y}", //{:%d/%m/%Y}",
-	      "format-alt": "{:%A, %B %d, %Y (%R)}  ",
-        // "format": "{%A %d %B %Y}", // %I:%M:%S %p }" 
-    },
-    "backlight": {
+
+	"clock": {
+		"interval": 10,
+		"format": "{:%e %b %Y @ %H:%M}",
+		"tooltip": false
+	},
+
+
+   "backlight": {
         "device": "intel_backlight",
         "format": "{icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
