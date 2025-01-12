@@ -52,18 +52,30 @@
         "format": "{icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
-    "battery": {
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon}",
-        "format-charging": "",
-        "format-plugged": "",
-        "format-alt": "{icon}",
-        "format-icons": ["", "",  "", "", "", "", "", "", "", "", "", ""]
-    },
-    "pulseaudio": {
+	
+  "battery": {
+		"interval": 10,
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format-time": "{H}:{M:02}",
+		"format": "{icon} {capacity}% ({time})",
+		"format-charging": " {capacity}% ({time})",
+		"format-charging-full": " {capacity}%",
+		"format-full": "{icon} {capacity}%",
+		"format-alt": "{icon} {power}W",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"tooltip": false
+	},
+   
+ "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%",
         "format-muted": "",
@@ -80,7 +92,7 @@
     "custom/power": {
         "tooltip": false,
         "on-click": "wlogout &",
-        "format": "襤"
+        "format": "Power", // 襤"
     },
   "network": {
         "interval": 5,
