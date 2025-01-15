@@ -16,7 +16,7 @@ set $sway_cl_col_fg #ABB2BF
 set $sway_cl_col_in #98C379
 set $sway_cl_col_afoc #E06B74
 set $sway_cl_col_ifoc #62AEEF
-set $sway_cl_col_ufoc 
+set $sway_cl_col_ufoc #292d37
 set $sway_cl_col_urgt #C778DD
 set $sway_cl_col_phol #1E2128
 
