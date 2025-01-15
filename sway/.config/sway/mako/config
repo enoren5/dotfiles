@@ -37,15 +37,15 @@ anchor=top-right
 # Mako_Colors
 background-color=#1E2128
 text-color=#ABB2BF
-border-color=#292d37
+border-color=
 progress-color=over #E06B74
 
 [urgency=low]
-border-color=#292d37
+border-color=
 default-timeout=2000
 
 [urgency=normal]
-border-color=#292d37
+border-color=
 default-timeout=5000
 
 [urgency=high]
