@@ -65,9 +65,9 @@ exec_always ~/.config/sway/scripts/startup
 ##-- Keybindings -------------------------
 
 # -- Terminal : alacritty --
-bindsym $mod+Return 			exec $alacritty
-bindsym $mod+Shift+Return 		exec $alacritty -f
-bindsym $mod+$alt+Return 		exec $alacritty -F
+# bindsym $mod+Return 			exec $alacritty
+# bindsym $mod+Shift+Return 		exec $alacritty -f
+# bindsym $mod+$alt+Return 		exec $alacritty -F
 
 # -- Terminal :foot --
 #bindsym $mod+Return 			exec $foot
@@ -76,9 +76,9 @@ bindsym $mod+$alt+Return 		exec $alacritty -F
 #bindsym $mod+t 				exec $foot -F
 
 # -- Terminal : kitty --
-#bindsym $mod+Return 			exec $kitty
-#bindsym $mod+Shift+Return 		exec $kitty -f
-#bindsym $mod+$alt+Return 		exec $kitty -F
+bindsym $mod+Return 			exec $kitty
+bindsym $mod+Shift+Return 		exec $kitty -f
+bindsym $mod+$alt+Return 		exec $kitty -F
 
 # -- GUI Apps --
 bindsym $mod+Shift+f 			exec $files
