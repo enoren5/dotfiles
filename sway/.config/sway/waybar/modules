@@ -70,8 +70,7 @@
 		"rotate": 0,
         //"timezone": "America/New_York",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "   {:%I:%M %p}",
-        "format-alt": "   {:%a %b %d, %G}"
+        "format": "   {:%I:%M %p     :%a %b %d, %G}"
     },
 
 	// waybar-cpu
@@ -207,11 +206,11 @@
              "3": "3:mail",
              "4": "4:web",
              "5": "5:dev",
-             "6": "6:data",
+             "6": "6:dev",
              "7": "7:algos",
-             "8": "8:",
+             "8": "8:data",
              "9": "9:",
-             "10": "10:show",
+             "10": "10:party",
              //"urgent": "",
              //"focused": "",
              //"default": ""
