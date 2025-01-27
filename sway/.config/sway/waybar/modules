@@ -70,7 +70,7 @@
 		"rotate": 0,
         //"timezone": "America/New_York",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "   {:%I:%M %p     :%a %b %d, %G}"
+        "format": "   {:%I:%M %p %a %d %b %G}"
     },
 
 	// waybar-cpu
@@ -209,7 +209,7 @@
              "6": "6:dev",
              "7": "7:algos",
              "8": "8:data",
-             "9": "9:",
+             "9": "9:steam",
              "10": "10:party",
              //"urgent": "",
              //"focused": "",
