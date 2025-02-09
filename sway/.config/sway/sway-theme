@@ -16,7 +16,7 @@ set $sway_cl_col_fg #dad3da
 set $sway_cl_col_in #F0B39C
 set $sway_cl_col_afoc #D3B1B5
 set $sway_cl_col_ifoc #D3B1B5
-set $sway_cl_col_ufoc 
+set $sway_cl_col_ufoc #D3B1B5 ## Problem line 
 set $sway_cl_col_urgt #E9C8AE
 set $sway_cl_col_phol #191a24
 
