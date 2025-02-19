@@ -11,14 +11,18 @@ gaps inner 10
 gaps outer 0
 
 ##-- Colors ------------------------------
-set $sway_cl_col_bg #1E2128
-set $sway_cl_col_fg #ABB2BF
-set $sway_cl_col_in #98C379
-set $sway_cl_col_afoc #E06B74
-set $sway_cl_col_ifoc #62AEEF
-set $sway_cl_col_ufoc #292d37
-set $sway_cl_col_urgt #C778DD
-set $sway_cl_col_phol #1E2128
+set $sway_cl_col_bg #191a24
+set $sway_cl_col_fg #dad3da
+set $sway_cl_col_in #F0B39C
+set $sway_cl_col_afoc #D3B1B5
+set $sway_cl_col_ifoc #D3B1B5
+<<<<<<< HEAD
+set $sway_cl_col_ufoc #D3B1B5 ## Problem line 
+=======
+set $sway_cl_col_ufoc 
+>>>>>>> parent of cc8150d (Resolve `ufoc` glitch)
+set $sway_cl_col_urgt #E9C8AE
+set $sway_cl_col_phol #191a24
 
 # class                  border              backgr.             text              indicator         child_border
 client.focused           $sway_cl_col_afoc   $sway_cl_col_afoc   $sway_cl_col_bg   $sway_cl_col_in   $sway_cl_col_afoc
