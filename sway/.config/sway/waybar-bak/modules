@@ -59,7 +59,7 @@
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-        "on-click": "~/.config/hypr/scripts/rofi_bluetooth",
+        "on-click": "~/.config/sway/scripts/rofi_bluetooth",
         "on-click-right": "blueman-manager",
     },
 
@@ -75,53 +75,37 @@
     },
 
 	// waybar-cpu
-    "cpu": {
-         "interval": 5,
-         "format": " LOAD: {usage}%",
-    },
-           
+
 	// waybar-custom
     "custom/themes": {
         "format": "",
         "tooltip": false,
-        "on-click": "$HOME/.config/hypr/theme/theme.sh --pywal",
-        "on-click-right": "$HOME/.config/hypr/theme/theme.sh --default",
-    },
-
-    "custom/menu": {
-         "format": "",
-         "tooltip": false,
-         //"on-click": "$HOME/.config/hypr/scripts/wofi_menu",
-         "on-click": "$HOME/.config/hypr/scripts/rofi_launcher",
-         "on-click-right": "$HOME/.config/hypr/scripts/rofi_runner",
-    },
-
-    "custom/power": {
-         "format": "襤",
-         "tooltip": false,
-         //"on-click": "$HOME/.config/hypr/scripts/wlogout",
-         "on-click": "$HOME/.config/hypr/scripts/rofi_powermenu",
+        "on-click": "$HOME/.config/sway/theme/theme.sh --pywal",
+        "on-click-right": "$HOME/.config/sway/theme/theme.sh --default",
     },
 
 	// waybar-disk
-    "disk": {
-         "interval": 30,
-         "format": " FREE: {free}",
-    },           	
-	
-	// waybar-memory
-    "memory": {
-         "interval": 10,
-         "format": " USED: {used:0.1f}G",
+	// waybar-idle-inhibitor
+    "idle_inhibitor": {
+         "format": "{icon}",
+         "format-icons": {
+             "activated": "",
+             "deactivated": ""
+         },
+         "timeout": 30
     },
-           
+
+	// waybar-inhibitor
+	// waybar-keyboard-state
+	// waybar-memory
+
 	// waybar-spotify
     "custom/spotify": {
-        "exec": "$HOME/.config/hypr/waybar/spotify",
+        "exec": "$HOME/.config/sway/waybar/spotify",
         "interval": 1,
         "format": "{}",
         "tooltip": true,
-        "max-length": 40,
+        "max-length": 45,
         "on-click": "playerctl play-pause",
         "on-click-middle": "playerctl previous",
         "on-click-right": "playerctl next",
@@ -135,9 +119,9 @@
         "interval": 2,
         "unknown-tag": "N/A",
 
-        "format": "{stateIcon} {artist} - {title}",
+        "format": "{artist} - {title} {stateIcon}",
         "format-disconnected": " Disconnected",
-        "format-paused": "{stateIcon} {artist} - {title}",
+        "format-paused": "{artist} - {title} {stateIcon}",
         "format-stopped": "Stopped ",
         "state-icons": {
             "paused": "",
@@ -147,11 +131,12 @@
         "tooltip-format-disconnected": "MPD (disconnected)",
 		// Commands to execute on events
         "on-click": "mpc toggle",
-        "on-click-middle": "mpc prev",
+        //"on-click-middle": "foot -c ~/.config/sway/foot/foot.ini -e ncmpcpp",
+        "on-click-middle": "alacritty --class 'alacritty-float,alacritty-float' --config-file ~/.config/sway/alacritty/alacritty.yml -e ncmpcpp",
         "on-click-right": "mpc next",
         "on-update": "",
-        "on-scroll-up": "mpc seek +00:00:01",
-        "on-scroll-down": "mpc seek -00:00:01",
+        "on-scroll-up": "volume --inc",
+        "on-scroll-down": "volume --dec",
         "smooth-scrolling-threshold": 1,
     },
 
@@ -171,12 +156,12 @@
 	// waybar-pulseaudio
     "pulseaudio": {
         //"format": "{volume}% {icon} {format_source}",
-        "format": "{icon} {volume}%",
+        "format": "{icon} {volume}% {format_source}",
         "format-muted": " Mute",
-        "format-bluetooth": " {volume}% {format_source}",
-        "format-bluetooth-muted": " Mute",
+        "format-bluetooth": " {volume}% {format_source}",
+        "format-bluetooth-muted": " Mute",
         "format-source": " {volume}%",
-        "format-source-muted": "",
+        "format-source-muted": " Mute",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -193,21 +178,29 @@
         "smooth-scrolling-threshold": 1,
     },
 
-	// waybar-idle-inhibitor
-    "idle_inhibitor": {
-         "format": "{icon}",
-         "format-icons": {
-             "activated": "",
-             "deactivated": ""
-         },
-         "timeout": 30
+	// waybar-river-tags
+	// waybar-sndio
+	// waybar-states
+	// waybar-sway-language
+
+	// waybar-sway-mode
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
     },
 
-	// waybar-wlr-workspaces
-    "hyprland/workspaces": {
+	// waybar-sway-window
+    "sway/window": {
+        "format": "{}",
+        "max-length": 50,
+        "icon": false,
+    },
+
+	// waybar-sway-workspaces
+    "sway/workspaces": {
+         "disable-scroll": false,
+         "disable-click": false,
+         "all-outputs": true,
          "format": "{icon}",
-         "sort-by-number": true,
-         "active-only": false,
          "format-icons": {
              "1": "",
              "2": "",
@@ -219,16 +212,25 @@
              "8": "",
              "9": "",
              "10": "ﳴ",
-             "urgent": "",
-             "focused": "",
-             "default": ""
+             //"urgent": "",
+             //"focused": "",
+             //"default": ""
          },
-         "on-click": "activate",
+        "smooth-scrolling-threshold": 1,
+        "disable-scroll-wraparound": false,
+        "enable-bar-scroll": false,
+        "disable-markup": false,
+        "current-only": false,
     },
+
+	// waybar-temperature
 
 	// waybar-tray
     "tray": {
         "icon-size": 16,
         "spacing": 10
-    }
+    },
+
+	// waybar-wlr-taskbar
+	// waybar-wlr-workspaces
 }
