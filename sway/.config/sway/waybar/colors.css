@@ -3,9 +3,9 @@
 */
 
 /** ********** Colors ********** **/
-@define-color background      #1E1E2E;
+@define-color background      #32324d; /*1E1E2E;*/
 @define-color background-alt1 #28283d;
-@define-color background-alt2 #32324d;
+@define-color background-alt2 #1E1E2E; /*32324d;*/
 @define-color foreground      #CDD6F4;
 @define-color selected        #89B4FA;
 @define-color black           #45475A;

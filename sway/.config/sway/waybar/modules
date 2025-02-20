@@ -70,8 +70,7 @@
 		"rotate": 0,
         //"timezone": "America/New_York",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": " {:%I:%M %p}",
-        "format-alt": " {:%a %b %d, %G}"
+        "format": "{:%I:%M %p  :%a %b %d, %G}",
     },
 
 	// waybar-cpu
@@ -82,7 +81,7 @@
            
 	// waybar-custom
     "custom/themes": {
-        "format": "",
+        "format": " ",
         "tooltip": false,
         "on-click": "$HOME/.config/hypr/theme/theme.sh --pywal",
         "on-click-right": "$HOME/.config/hypr/theme/theme.sh --default",
@@ -159,7 +158,7 @@
     "network": {
 		"interval": 5,
         //"interface": "wlan*", // (Optional) To force the use of this interface, set it for netspeed to work
-        "format-wifi": " {essid}",
+        "format-wifi": "  {essid}",
         "format-ethernet": " {ipaddr}/{cidr}",
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "睊 Disconnected",
@@ -172,9 +171,9 @@
     "pulseaudio": {
         //"format": "{volume}% {icon} {format_source}",
         "format": "{icon} {volume}%",
-        "format-muted": " Mute",
-        "format-bluetooth": " {volume}% {format_source}",
-        "format-bluetooth-muted": " Mute",
+        "format-muted": "  Mute",
+        "format-bluetooth": "  {volume}% {format_source}",
+        "format-bluetooth-muted": "  Mute",
         "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
@@ -197,8 +196,8 @@
     "idle_inhibitor": {
          "format": "{icon}",
          "format-icons": {
-             "activated": "",
-             "deactivated": ""
+             "activated": " ",
+             "deactivated": " "
          },
          "timeout": 30
     },
