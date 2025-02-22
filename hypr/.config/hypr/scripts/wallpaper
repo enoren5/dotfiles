@@ -4,6 +4,6 @@
 ##
 ## Set Wallpaper in Hyprland
 
-WALLPAPER="$HOME/Downloads/tree.png"
+WALLPAPER="$HOME/Pictures/wallpapers/tree.png"
 
 swaybg --output '*' --mode fill --image "$WALLPAPER"
