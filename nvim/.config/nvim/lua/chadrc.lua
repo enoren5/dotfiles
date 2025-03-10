@@ -13,11 +13,15 @@ M.base46 = {
   changed_themes = {
      catppuccin = {
         
-       base_16 = { base00 ="#303446"},
+       base_16 = { 
+        base00 ="#303446",
+        base03 = "#605f6f",
+        },
         
        base_30 = { 
         black = "#303446",
         darker_black = "#292c39",
+        line = "#605f6f",
         },
       },
   },
