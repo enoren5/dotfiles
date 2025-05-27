@@ -89,7 +89,7 @@
     },
 
     "custom/menu": {
-         "format": "",
+         "format": "",
          "tooltip": false,
          //"on-click": "$HOME/.config/hypr/scripts/wofi_menu",
          "on-click": "$HOME/.config/hypr/scripts/rofi_launcher",
@@ -209,7 +209,7 @@
          "sort-by-number": true,
          "active-only": false,
          "format-icons": {
-             "1": "1:ctrl",
+             "1": "1:ctrl" ,
              "2": "2:chat",
              "3": "3:web",
              "4": "4:web",
