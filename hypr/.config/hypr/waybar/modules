@@ -70,7 +70,7 @@
 		"rotate": 0,
         //"timezone": "America/New_York",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": " {:%I:%M %p}",
+        "format": " {:%I:%M:%S %p}",
         "format-alt": " {:%a %b %d, %G}"
     },
 
@@ -212,10 +212,10 @@
              "1": "1:ctrl" ,
              "2": "2:chat",
              "3": "3:web",
-             "4": "4:web",
+             "4": "4:dev",
              "5": "5:dev",
-             "6": "6:dev",
-             "7": "7:dev",
+             "6": "6:games",
+             "7": "7:demo",
              "8": "8:demo",
              "9": "9:",
              "10":"10:",
