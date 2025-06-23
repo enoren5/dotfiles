@@ -22,8 +22,7 @@
     "fixed-center": true, 
     "ipc": true, 		
  
-    "modules-left": ["custom/menu", "cpu", "memory", "disk", "idle_inhibitor"],
-    "modules-center": ["hyprland/workspaces", "mpd", "tray"],
+    "modules-left": ["custom/menu", "hyprland/workspaces", "mpd"],
     //"modules-center": ["hyprland/workspaces", "custom/spotify", "tray"],
-    "modules-right": ["custom/themes", "pulseaudio", "backlight", "bluetooth", "network", "battery", "clock", "custom/power"],
+    "modules-right": ["idle_inhibitor",  "cpu", "memory", "pulseaudio", "backlight", "bluetooth", "network", "battery", "tray", "clock", "custom/power"],
 }
