@@ -14,15 +14,20 @@
 /** ********** Waybar Window ********** **/
 window#waybar {
     background-color: @background;
-	color: @background;
+	  color: @background;
     border-bottom: 0px solid @background-alt1;
-	border-radius: 20px 20px 20px 20px;
+	  border-radius: 20px 20px 20px 20px;
     transition-property: background-color;
     transition-duration: 1.5s;
-     
+    /* 
      border-top:100px; 
      margin-top:100px;
      padding-top:100px;
+     */
+    border: 4px solid  #8EB3F7;
+    /* padding: 50px; */
+    /* height:100px;*/
+
 }
 
 window#waybar.hidden {
@@ -221,10 +226,14 @@ window#waybar.hidden {
 	border-radius: 4px;
 	margin: 0px 0px;
 	padding: 0px 0px;
+  border-top: 0px solid  #8EB3F7;
+  border-bottom: 0px solid  #8EB3F7;
 }
+
 #workspaces button{
 	color: @foreground;
 }
+
 #workspaces button.active{
 	color: @selected;
 }
