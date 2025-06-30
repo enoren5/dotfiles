@@ -18,11 +18,11 @@
     "margin-top": 20, 	
     "margin-bottom": 0, 
     "margin-left": 20, 	
-    "margin-right": 20, 	
+    "margin-right":20, 	
     "fixed-center": true, 
     "ipc": true, 		
  
-    "modules-left": ["custom/menu", "hyprland/workspaces", "mpd"],
-    //"modules-center": ["hyprland/workspaces", "custom/spotify", "tray"],
-    "modules-right": ["idle_inhibitor",  "cpu", "memory", "pulseaudio", "backlight", "bluetooth", "network", "battery", "tray", "clock", "custom/power"],
+    "modules-left": ["custom/menu", "hyprland/workspaces","idle_inhibitor", "mpd"],
+    "modules-center": ["cpu","memory", "clock", "tray"],
+    "modules-right": ["pulseaudio", "backlight", "bluetooth", "network", "battery",  "custom/power"],
 }
