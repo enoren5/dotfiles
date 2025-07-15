@@ -19,10 +19,10 @@
     "margin-bottom": 0, 
     "margin-left": 20, 	
     "margin-right":20, 	
-    "fixed-center": true, 
+    // "fixed-center": true, 
     "ipc": true, 		
  
     "modules-left": ["custom/menu", "hyprland/workspaces","idle_inhibitor", "mpd"],
-    "modules-center": ["cpu","memory", "clock", "tray"],
-    "modules-right": ["pulseaudio", "backlight", "bluetooth", "network", "battery",  "custom/power"],
+    // "modules-center": ["cpu","memory", "clock", "tray"],
+    "modules-right": ["cpu","memory", "pulseaudio", "backlight", "bluetooth", "network", "battery", "tray","clock", "custom/power"],
 }

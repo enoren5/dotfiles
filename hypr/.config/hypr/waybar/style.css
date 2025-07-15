@@ -292,7 +292,7 @@ window#waybar.hidden {
 }
 
 
-.modules-left, .modules-center, .modules-right {
+.modules-left, .modules-right {
     background-color: rgba(30, 30, 46, 0.8); 
     border-radius: 20px;
     /* margin: 10px 10px 10px 10px; */ /* spacing between segments */
