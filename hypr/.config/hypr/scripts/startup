@@ -18,13 +18,13 @@ if [[ ! `pidof xfce-polkit` ]]; then
 fi
 
 # Set wallpaper
-/home/Paul/dotfiles/hypr/.config/hypr/scripts/wallpaper &
+/home/gnull/dotfiles/hypr/.config/hypr/scripts/wallpaper &
 
 # Apply themes
-/home/Paul/dotfiles/hypr/.config/hypr/scripts/gtkthemes &
+/home/gnull/dotfiles/hypr/.config/hypr/scripts/gtkthemes &
 
 # Lauch notification daemon (mako)
-/home/Paul/dotfiles/hypr/.config/hypr/scripts/notifications &
+/home/gnull/dotfiles/hypr/.config/hypr/scripts/notifications &
 
 # Lauch statusbar (waybar)
 ~/.config/hypr/scripts/statusbar &
