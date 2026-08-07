@@ -23,6 +23,6 @@
     "ipc": true, 		
  
     "modules-left": ["custom/menu", "hyprland/workspaces","idle_inhibitor", "mpd"],
-    // "modules-center": ["cpu","memory", "clock", "tray"],
-    "modules-right": ["cpu","memory", "pulseaudio", "backlight", "bluetooth", "network", "battery", "tray","clock", "custom/power"],
+    "modules-center": ["cpu", "clock", "memory"],
+    "modules-right": ["pulseaudio", "backlight", "bluetooth", "network", "battery", "tray", "custom/power"],
 }
