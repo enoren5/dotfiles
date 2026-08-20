@@ -1,0 +1,13 @@
+## Copyright (C) 2020-2026 Aditya Shakya <adi1090x@gmail.com>
+
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = hyprland
+Target = hyprland-git
+
+[Action]
+Description = Removing Hyprland-uwsm Desktop file...
+When = PostTransaction
+Exec = /usr/bin/rm -f /usr/share/wayland-sessions/hyprland-uwsm.desktop

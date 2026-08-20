@@ -1,0 +1,52 @@
+-- Copyright (C) 2020-2026 Aditya Shakya <adi1090x@gmail.com>
+--
+-- Hyprland configuration : General -------------------------
+
+hl.config({
+    general = {
+        border_size     = hypr_border_size,
+        gaps_in         = hypr_gaps_in,
+        gaps_out        = hypr_gaps_out,
+        float_gaps      = 0,
+        gaps_workspaces = hypr_gaps_ws,
+
+        col = {
+            active_border = {
+                colors = {
+                    active_border_col_1,
+                    active_border_col_2,
+                },
+                angle = gradient_angle,
+            },
+        
+            inactive_border = {
+                colors = {
+                    inactive_border_col_1,
+                    inactive_border_col_2,
+                },
+                angle = gradient_angle,
+            },
+        
+            nogroup_border        = inactive_border_col_2,
+            nogroup_border_active = group_border_active_col,
+        },
+
+        layout                  = "dwindle",
+        no_focus_fallback       = false,
+        resize_on_border        = true,
+        extend_border_grab_area = 15,
+        hover_icon_on_border    = true,
+        allow_tearing           = false,
+        resize_corner           = 0,
+        modal_parent_blocking   = true,
+        locale                  = "",
+
+        snap = {
+            enabled        = false,
+            window_gap     = 10,
+            monitor_gap    = 10,
+            border_overlap = false,
+            respect_gaps   = false,
+        },
+    },
+})
