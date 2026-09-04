@@ -117,3 +117,13 @@ hl.workspace_rule({ workspace = "12", persistent = false, default_name = "12:dem
 
 hl.bind("ALT + Tab",           hl.dsp.window.cycle_next())
 -- hl.bind("ALT + SHIFT + Tab",   hl.dsp.window.swap({ prev = true }))
+
+hl.on("hyprland.start", function()
+    hl.exec_cmd("protonvpn-app", { workspace = "2" })
+end)
+
+hl.on("hyprland.start", function()
+    hl.exec_cmd("protonvpn-app", { workspace = "2" })
+	hl.exec_cmd("proton-pass", { workspace = "2" })
+	hl.exec_cmd("proton-mail", { workspace = "2" })
+end)
