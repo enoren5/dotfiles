@@ -53,6 +53,9 @@
   },
   "fontFamily": "feather",
   "fontScale": 1.09,
+  "acLockTimeout": 300,
+  "acPostLockMonitorTimeout": 300,
+  "lockBeforeSuspend": true,
   "osdPowerProfileEnabled": true,
   "screenPreferences": {
     "wallpaper": [
@@ -189,6 +192,12 @@
     },
     "dms_settings": {
       "enabled": true
+    },
+    "dms_power": {
+      "trigger": "pw"
+    },
+    "dms_qr_generator": {
+      "trigger": "qrg"
     }
   },
   "frameEnabled": true,
