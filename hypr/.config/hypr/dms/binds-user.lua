@@ -19,3 +19,14 @@ hl.unbind("SUPER + SHIFT + T")
 hl.unbind("SUPER + T")
 hl.unbind("SUPER + space")
 hl.bind("SUPER + space", hl.dsp.window.float({ action = "toggle" }), { description = "Float/unfloat window" })
+
+hl.bind("SUPER + 0", hl.dsp.focus({ workspace = "10" }), { description = "focus workspace 10" })
+hl.bind("SUPER + minus", hl.dsp.focus({ workspace = "11" }), { description = "focus workspace 11" })
+hl.bind("SUPER + equal", hl.dsp.focus({ workspace = "12" }), { description = "focus workspace 12" })
+
+hl.bind("SUPER + SHIFT + 0", hl.dsp.window.move({ workspace = "10" }))
+hl.bind("SUPER + SHIFT + minus", hl.dsp.window.move({ workspace = "11" }))
+hl.bind("SUPER + SHIFT + equal", hl.dsp.window.move({ workspace = "12" }))
+
+hl.bind("SUPER + KP_Subtract", hl.dsp.window.resize({ x = -100, y = 0, relative = true }), { repeating = true })
+hl.bind("SUPER + KP_Add", hl.dsp.window.resize({ x = 100, y = 0, relative = true }), { repeating = true })
