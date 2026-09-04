@@ -1,12 +1,12 @@
 {
   "currentThemeName": "custom",
-  "currentThemeCategory": "registry",
+  "currentThemeCategory": "custom",
   "customThemeFile": "/home/Paul/.config/DankMaterialShell/themes/catppuccin/theme.json",
   "registryThemeVariants": {
     "catppuccin": {
       "dark": {
-        "flavor": "frappe",
-        "accent": "teal"
+        "flavor": "mocha",
+        "accent": "mauve"
       }
     }
   },
