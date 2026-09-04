@@ -5,12 +5,12 @@
   "registryThemeVariants": {
     "catppuccin": {
       "dark": {
-        "flavor": "mocha",
-        "accent": "mauve"
+        "flavor": "frappe",
+        "accent": "blue"
       }
     }
   },
-  "matugenScheme": "scheme-tonal-spot",
+  "matugenScheme": "scheme-neutral",
   "matugenContrast": 0,
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
@@ -555,9 +555,7 @@
   "updaterIgnoredPackages": [],
   "displayNameMode": "system",
   "screenPreferences": {
-    "wallpaper": [
-      "all"
-    ]
+    "wallpaper": []
   },
   "showOnLastDisplay": {},
   "niriOutputSettings": {},
@@ -587,8 +585,7 @@
       "showOnLastDisplay": true,
       "leftWidgets": [
         "launcherButton",
-        "workspaceSwitcher",
-        "focusedWindow"
+        "workspaceSwitcher"
       ],
       "centerWidgets": [
         "music",
