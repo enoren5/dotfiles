@@ -11,7 +11,7 @@ hl.bind("ALT + CTRL + SHIFT + Left", hl.dsp.window.move({ workspace = "e-1" }), 
 hl.unbind("ALT + CTRL + SHIFT + Right")
 hl.bind("ALT + CTRL + SHIFT + Right", hl.dsp.window.move({ workspace = "e+1" }), { description = "move to workspace e+1 (non-silent)" })
 hl.unbind("SUPER + Return")
-hl.bind("SUPER + Return", hl.dsp.exec_cmd("kitty"), { description = "kitty" })
+hl.bind("SUPER + Return", hl.dsp.exec_cmd("kitty --directory ~"), { description = "kitty" })
 hl.unbind("SUPER + CTRL + down")
 hl.unbind("SUPER + Page_Down")
 hl.unbind("SUPER + Page_Up")
