@@ -77,6 +77,14 @@ hl.window_rule({
 	size = "1500 monitor_h*0.5",
 	center = true,
 })
+
+hl.window_rule({
+	match = { class = "^(org\\.gnome\\.Meld)$" },
+	float = true,
+	size = "monitor_w*0.4 monitor_h*0.6",
+	center = true,
+})
+
 hl.window_rule({ match = { class = "^(xdg-desktop-portal)$" }, float = true })
 hl.window_rule({
 	match = { class = "^(steam)$", title = "^(notificationtoasts)" },
