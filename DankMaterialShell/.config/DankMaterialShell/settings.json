@@ -54,8 +54,8 @@
   "fontFamily": "feather",
   "fontScale": 1.09,
   "acLockTimeout": 300,
-  "acPostLockMonitorTimeout": 300,
   "lockBeforeSuspend": true,
+  "osdMediaPlaybackEnabled": true,
   "osdPowerProfileEnabled": true,
   "screenPreferences": {
     "wallpaper": [
@@ -203,5 +203,5 @@
   "frameEnabled": true,
   "frameThickness": 5,
   "frameRounding": 10,
-  "configVersion": 17
+  "configVersion": 18
 }
