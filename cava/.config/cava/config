@@ -241,18 +241,34 @@
 #; gradient_color_8 = '#cc3333'
 
 [color]
- background = '#303446'
+#
+# Dank Material Shell / Dux "purple" theme (dark), from ~/.cache/DankMaterialShell/dms-colors.json
+# Background left as the terminal default
+gradient = 1
+gradient_color_1 = '#4f378b'
+gradient_color_2 = '#684fac'
+gradient_color_3 = '#937fcb'
+gradient_color_4 = '#bca5f2'
+gradient_color_5 = '#d0bcff'
+gradient_color_6 = '#ded0ff'
+gradient_color_7 = '#ff9fb2'
+gradient_color_8 = '#ff728f'
 
- gradient = 1
+#
+# Old Catppuccin follows
+# background = '#303446'
+#
 
- gradient_color_8 = '#81c8be'
- gradient_color_7 = '#99d1db'
- gradient_color_6 = '#85c1dc'
- gradient_color_5 = '#8caaee'
- gradient_color_4 = '#ca9ee6'
- gradient_color_3 = '#f4b8e4'
- gradient_color_2 = '#ea999c'
- gradient_color_1 = '#e78284'
+# gradient = 1
+
+ #gradient_color_8 = '#81c8be'
+ #gradient_color_7 = '#99d1db'
+ #gradient_color_6 = '#85c1dc'
+ #gradient_color_5 = '#8caaee'
+ #gradient_color_4 = '#ca9ee6'
+ #gradient_color_3 = '#f4b8e4'
+ #gradient_color_2 = '#ea999c'
+ #gradient_color_1 = '#e78284'
 
 [smoothing]
 
