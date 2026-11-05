@@ -2,15 +2,30 @@
 
 hl.config({
 	general = {
-		gaps_in = 4,
-		gaps_out = 4,
+		gaps_in = 8,
+		gaps_out = 8,
 		border_size = 4,
 		resize_on_border = true,
 	},
 	decoration = {
 		rounding = 10,
 		blur = {
-			passes = 2,
+			size = 6,
+			passes = 3,
+		},
+		wobble = {
+			enabled = true,
+			intensity = 1.7,
+			stiffness = 147,
+		},
+		motion_blur = {
+			enabled = true,
+			samples = 64,
+		},
+	},
+	group = {
+		groupbar = {
+			text_padding = 16,
 		},
 	},
 })
@@ -20,12 +35,4 @@ hl.layer_rule({
 	xray = true,
 })
 
-hl.layer_rule({
-	match = { namespace = "^dms:bar$" },
-	xray = true,
-})
-
-hl.layer_rule({
-	match = { namespace = "^dms:dankisland$" },
-	xray = true,
-})
+-- bar-xray off

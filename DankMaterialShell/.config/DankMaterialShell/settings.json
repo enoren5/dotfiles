@@ -21,7 +21,7 @@
   "floatingWindowSyncGlobal": false,
   "floatingWindowTransparency": 0.83,
   "floatingWindowForegroundTransparency": 0.6,
-  "widgetBackgroundColor": "sth",
+  "widgetBackgroundColor": "primaryContainer",
   "widgetBackgroundCustomColor": "#214c5f",
   "controlCenterTileColorMode": "surfaceVariant",
   "buttonColorMode": "surfaceVariant",
@@ -33,15 +33,15 @@
   "audioShowStreamDevices": true,
   "showSeconds": true,
   "motionEffect": 2,
-  "m3ElevationIntensity": 11,
-  "m3ElevationOpacity": 100,
+  "m3ElevationIntensity": 12,
+  "m3ElevationOpacity": 30,
   "m3ElevationColorMode": "text",
   "modalElevationEnabled": false,
   "popoutElevationEnabled": false,
   "barElevationEnabled": false,
   "blurEnabled": true,
   "blurBorderColor": "primary",
-  "wallpaperFillMode": "Stretch",
+  "wallpaperFillMode": "Fill",
   "wallpaperBackgroundCustomColor": "#2e2e2e",
   "systemTrayIconTintMode": "secondary",
   "appIdSubstitutions": [],
@@ -96,12 +96,18 @@
           "id": "workspaceSwitcher",
           "enabled": true,
           "showWorkspaceName": true,
-          "showWorkspacePadding": true,
+          "showWorkspacePadding": false,
           "workspaceColorMode": "tertiary",
           "workspaceUrgentColorMode": "sch",
           "workspaceFocusedBorderEnabled": true,
           "workspaceFocusedBorderColor": "primaryContainer",
-          "workspaceFocusedBorderThickness": 1
+          "workspaceFocusedBorderThickness": 1,
+          "workspaceIndicatorStyle": "pills",
+          "showWorkspaceIndex": false,
+          "showWorkspaceApps": false,
+          "reverseScrolling": false,
+          "workspaceIndicatorCompact": false,
+          "workspaceIndicatorRoundness": -1
         },
         "focusedWindow"
       ],
@@ -119,11 +125,11 @@
       "rightWidgets": [
         {
           "id": "memUsage",
-          "enabled": true
+          "enabled": false
         },
         {
           "id": "cpuUsage",
-          "enabled": true
+          "enabled": false
         },
         "systemTray",
         "clipboard",
@@ -143,11 +149,11 @@
       "innerPadding": 6,
       "barInsetPadding": 4,
       "bottomGap": 0,
-      "transparency": 0.45,
+      "transparency": 0,
       "widgetTransparency": 0.79,
       "squareCorners": false,
       "noBackground": false,
-      "maximizeWidgetIcons": false,
+      "maximizeWidgetIcons": true,
       "maximizeWidgetText": false,
       "widgetPadding": 13,
       "gothCornersEnabled": false,
@@ -158,10 +164,10 @@
       "borderOpacity": 0.62,
       "borderThickness": 4,
       "widgetOutlineEnabled": true,
-      "widgetOutlineColor": "primary",
-      "widgetOutlineOpacity": 0.78,
+      "widgetOutlineColor": "secondary",
+      "widgetOutlineOpacity": 0.81,
       "widgetOutlineThickness": 4,
-      "fontScale": 1.25,
+      "fontScale": 1.17,
       "iconScale": 1.25,
       "autoHide": false,
       "autoHideStrict": false,
@@ -189,7 +195,6 @@
       "surfaceColor": "default",
       "widgetStyle": "pills",
       "dot": false,
-      "island": true,
       "islandFloating": false,
       "islandPlacement": "free",
       "islandNotch": false,
@@ -245,7 +250,13 @@
           "id": "tray",
           "enabled": false
         }
-      ]
+      ],
+      "islandHighContrast": false,
+      "islandPalette": "default",
+      "islandSatelliteBackground": false,
+      "islandSatelliteGothCorners": false,
+      "islandSatelliteFollowInterfaceStyle": true,
+      "islandSatelliteGap": 12
     },
     {
       "id": "dot1792886807478",
@@ -262,7 +273,7 @@
           "id": "workspaceSwitcher",
           "enabled": true,
           "showWorkspaceName": true,
-          "showWorkspacePadding": true,
+          "showWorkspacePadding": false,
           "workspaceColorMode": "tertiary",
           "workspaceUrgentColorMode": "sch",
           "workspaceFocusedBorderEnabled": true,
@@ -366,11 +377,11 @@
       "trigger": "qrg"
     }
   },
-  "frameEnabled": false,
-  "frameThickness": 4,
-  "frameRounding": 23,
+  "frameEnabled": true,
+  "frameThickness": 8,
+  "frameRounding": 6,
   "frameCloseGaps": false,
-  "frameBarInsetPadding": 20,
+  "frameBarInsetPadding": 12,
   "configVersion": 42,
   "radiusStrength": 50,
   "blurBorderEnabled": true,
@@ -639,7 +650,7 @@
   "launcherKeybinds": {},
   "dankLauncherV2Size": "large",
   "terminalPalette": "medium",
-  "terminalOpacity": 54,
+  "terminalOpacity": 63,
   "frameBarSize": 40,
   "radiusMode": "scale",
   "dashCards": [
@@ -699,5 +710,24 @@
       "h": 1
     }
   ],
-  "iconThemePerMode": false
+  "iconThemePerMode": false,
+  "hyprlandWobbleEnabled": true,
+  "hyprlandWobbleIntensity": 170,
+  "hyprlandWobbleStiffness": 147,
+  "hyprlandMotionBlurEnabled": true,
+  "hyprlandMotionBlurSamples": 64,
+  "hyprlandGroupbarBlur": false,
+  "hyprlandLayoutGapsOverride": 8,
+  "hyprlandGlowEnabled": false,
+  "hyprlandGlowRange": 10,
+  "hyprlandGroupbarTextPadding": 16,
+  "hyprlandBlurVariant": "kawase",
+  "hyprlandLayoutGapsOutOverride": 8,
+  "barInsetPaddingSyncAll": true,
+  "widgetColorMode": "default",
+  "blurStrength": 89,
+  "m3ElevationEnabled": true,
+  "matugenTemplateKitty": true,
+  "frameBlurEnabled": false,
+  "frameMode": "separate"
 }
