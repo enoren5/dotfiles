@@ -2,8 +2,8 @@
 
 hl.config({
 	general = {
-		gaps_in = 9,
-		gaps_out = 9,
+		gaps_in = 4,
+		gaps_out = 4,
 		border_size = 4,
 		resize_on_border = true,
 	},
@@ -22,5 +22,10 @@ hl.layer_rule({
 
 hl.layer_rule({
 	match = { namespace = "^dms:bar$" },
+	xray = true,
+})
+
+hl.layer_rule({
+	match = { namespace = "^dms:dankisland$" },
 	xray = true,
 })
