@@ -38,7 +38,7 @@ hl.config({
 		shadow = {
 			enabled = true,
 			range = 30,
-			render_power = 5,
+			render_power = 4,
 			offset = "0 5",
 			color = "rgba(00000070)",
 		},
@@ -109,16 +109,16 @@ require("dms.windowrules")
 require("binds-aditya-transfer")
 
 hl.workspace_rule({ workspace = "1", persistent = true, default_name = "1:ctl" })
-hl.workspace_rule({ workspace = "2", persistent = true, default_name = "2:sec" })
+hl.workspace_rule({ workspace = "2", persistent = false, default_name = "2:sec" })
 hl.workspace_rule({ workspace = "3", persistent = false, default_name = "3:chat" })
-hl.workspace_rule({ workspace = "4", persistent = true, default_name = "4:audio" })
-hl.workspace_rule({ workspace = "5", persistent = true, default_name = "5:docs" })
+hl.workspace_rule({ workspace = "4", persistent = false, default_name = "4:audio" })
+hl.workspace_rule({ workspace = "5", persistent = false, default_name = "5:docs" })
 hl.workspace_rule({ workspace = "6", persistent = true, default_name = "6:web" })
 hl.workspace_rule({ workspace = "7", persistent = false, default_name = "7:web" })
-hl.workspace_rule({ workspace = "8", persistent = true, default_name = "8:dev" })
+hl.workspace_rule({ workspace = "8", persistent = false, default_name = "8:dev" })
 hl.workspace_rule({ workspace = "9", persistent = false, default_name = "9:dev" })
 hl.workspace_rule({ workspace = "10", persistent = false, default_name = "10:dev" })
-hl.workspace_rule({ workspace = "11", persistent = true, default_name = "11:steam" })
+hl.workspace_rule({ workspace = "11", persistent = false, default_name = "11:steam" })
 hl.workspace_rule({ workspace = "12", persistent = false, default_name = "12:demo" })
 
 -- hl.workspace_rule({ workspace = "2", "name:Hello"})
